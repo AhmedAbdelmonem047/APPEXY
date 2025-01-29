@@ -21,13 +21,13 @@ function setMode(mode) {
     if (mode == 'dark') {
         localStorage.setItem('darkMode', 'dark');
         body.classList.add('dark');
-        logoImg.src = './src/images/logoDark.png'
+        logoImg.src = '/assets/logoDark.png'
         darkBtn.innerHTML = 'Light Mode'
     }
     if (mode == 'light') {
         localStorage.setItem('darkMode', 'light');
         body.classList.remove('dark');
-        logoImg.src = './src/images/logoLight.png'
+        logoImg.src = '/assets/logoLight.png'
         darkBtn.innerHTML = 'Dark Mode'
     }
 }
